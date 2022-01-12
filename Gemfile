@@ -64,3 +64,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "hotwire-rails", "~> 0.1.3"
