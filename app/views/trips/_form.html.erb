@@ -16,6 +16,11 @@
     <%= form.rich_text_area :purpose %>
   </div>
 
+  <div class="flex flex-col">
+    <%= form.label :places  %>
+    <%= form.select :places, @places, {}, { multiple: false } %>
+  </div>
+
   <div>
     <%= form.submit class: 'mt-5 bg-indigo-500 hover:bg-indigo-400 text-white font-bold 
                             py-2 px-4 border-b-4 border-indigo-700 hover:border-indigo-500 rounded

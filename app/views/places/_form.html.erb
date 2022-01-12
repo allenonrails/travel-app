@@ -1,0 +1,15 @@
+<%= form_with model: place, html: { class: 'flex flex-col text-gray-500' } do |form| %>
+  <div class="flex flex-col mb-4">
+    <%= form.label :name, class: 'text-xl' %>
+    <%= form.text_field :name, placeholder: :name, class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' %>
+  </div>
+  <div class="flex flex-col">
+    <%= form.label :zip_code, class: 'text-xl' %>
+    <%= form.number_field :zip_code, placeholder: :zip_code, class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'  %>
+  </div>
+  <div class="flex">
+    <%= form.submit class: 'mt-5 bg-green-500 hover:bg-green-400 text-white font-bold 
+                            py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded
+                            cursor-pointer' %>
+  </div>
+<% end %>
