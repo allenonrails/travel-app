@@ -10,12 +10,6 @@ class TripsController < ApplicationController
   def show
   end
 
-  # GET /trips/new
-  def new
-    @trip = Trip.new
-    @places = Place.all.collect { |place| [place.name, place.id] }
-  end
-
   # GET /trips/1/edit
   def edit
   end
