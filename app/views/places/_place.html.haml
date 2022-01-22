@@ -1,0 +1,5 @@
+%a.bg-gray-200.rounded-md.overflow-hidden.h-96.w-full.flex.flex-col.items-center.justify-end.hover:scale-105.transition.relative(place){"data-turbo-frame" => "modal", :href => "#{edit_place_path(place)}", :id => "#{dom_id(place)}"}
+  = image_tag url_for(place.image), class: 'h-96 w-full object-cover' if place.image.attached?
+  .max-auto.py-2.bg-gray-800.flex.justify-center.rounded-t-lg.absolute{:class => "w-3/4"}
+    %h3.text-gray-800.text-gray-50.transition.duration-300
+      = place.name
